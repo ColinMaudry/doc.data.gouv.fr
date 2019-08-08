@@ -1,4 +1,4 @@
-title: Data.gouv.fr Docs
+title: data.gouv.fr - documentation
 description: >
     La documentation du site data.gouv.fr
 
@@ -15,9 +15,6 @@ i18n:
   fr:
     edit: Editer cette page
 
-sass:
-    style: compressed
-
 exclude:
   - README.md
   - docker-compose.yml
@@ -33,28 +30,28 @@ collections_dir: articles
 
 # Metadata for our collections
 collections:
-  faq:
-    title: Découvrir l’OpenData
-    output: true
-    order: 1
   a-propos:
     title: À propos
     output: true
-    order: 2
+    order: 1
   gestion-du-compte:
     title: Gestion du compte
     output: true
-    order: 3
+    order: 2
   jeux-de-donnees:
     title: Jeux de données
     output: true
-    order: 4
+    order: 3
   organisations:
     title: Organisation
     output: true
-    order: 5
+    order: 4
   reutilisations-et-discussions:
     title: Réutilisations et discussions
+    output: true
+    order: 5
+  moissonnage:
+    title: Moissonnage
     output: true
     order: 6
   api:
@@ -67,6 +64,9 @@ defaults:
       path: ""
     values:
       layout: page
+
+sass:
+  style: compressed
 
 theme: jekyll-theme-gouvfr
 
